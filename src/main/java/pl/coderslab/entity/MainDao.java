@@ -4,7 +4,7 @@ package pl.coderslab.entity;
 public class MainDao {
     public static void main(String[] args) {
         // Test create
-        //        User user = new User();
+//        User user = new User();
 //        UserDao userDao = new UserDao();
 //
 //        user.setUserName("testUser");
@@ -34,6 +34,12 @@ public class MainDao {
 //        UserDao userDao = new UserDao();
 //        userDao.delete(1);
 
-
+//        // Test update
+//        UserDao userDao = new UserDao();
+//        User user = userDao.read(2);
+//        user.setUserName("testUser2");
+//        user.setPassword("testPassword1");
+//        user.setEmail("testemailtest@email.com");
+//        userDao.update(user);
     }
 }
