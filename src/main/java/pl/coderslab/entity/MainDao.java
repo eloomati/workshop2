@@ -41,5 +41,17 @@ public class MainDao {
 //        user.setPassword("testPassword1");
 //        user.setEmail("testemailtest@email.com");
 //        userDao.update(user);
+
+
+//        // Test readAll
+//
+//        UserDao userDao = new UserDao();
+//        User[] users = userDao.findAllWithOtherMethod();
+//        for (User user : users) {
+//            System.out.println(user.getId());
+//            System.out.println(user.getUserName());
+//            System.out.println(user.getEmail());
+//            System.out.println(user.getPassword());
+//        }
     }
 }
