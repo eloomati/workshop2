@@ -29,5 +29,11 @@ public class MainDao {
 //        System.out.println(user2.getUserName());
 //        System.out.println(user2.getEmail());
 //        System.out.println(user2.getPassword());
+
+//        // Test delete
+//        UserDao userDao = new UserDao();
+//        userDao.delete(1);
+
+
     }
 }

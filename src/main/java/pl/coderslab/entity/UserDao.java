@@ -61,6 +61,7 @@ public class UserDao {
                     conn.prepareStatement(READ_USER_QUERY);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
+            // Pobieranie i ustawianie wartości obiektu user
             while (resultSet.next()){
                 user.setId(resultSet.getInt("id"));
                 user.setUserName(resultSet.getString("username"));
@@ -71,6 +72,17 @@ public class UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public void delete(int id){
+        try (Connection conn = DbUtil.getConnection()){
+            PreparedStatement statement =
+                    conn.prepareStatement(DELETE_USER_QUERY);
+            statement.setInt(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e){
+            e.printStackTrace();
         }
     }
 
